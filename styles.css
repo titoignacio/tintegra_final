@@ -1,6 +1,7 @@
 body{
 
-color: #25d366;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(191,255,250,1) 100%);
 
     
 
@@ -33,14 +34,75 @@ color: #25d366;
 	margin-top:16px;
 }
 
+/*boton*/
+
+
+#container-button {
+	width:220px;
+  margin:30px auto;
+}
+
+.button {
+ 	display:block;
+  position:relative;
+  
+  padding:7px;
+  margin:35px 0;
+  
+  text-decoration:none;
+  text-align:center;
+
+  border:1px solid rgba(0,0,0,0.4);
+  border-radius:0.2em;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    inset 0 20px 20px rgba(255,255,255,0.2),
+    1px 2px 1px rgba(0,0,0,0.2),
+    0 0 2px 8px rgba(50,50,50,0.1);
+  transition:all 0.3s ease-out;
+  background:orangered;
+  
+  font-family:Helvetica, sans-serif;
+  font-size:1.5em;
+  line-height:1.5em;
+  font-weight:bold;
+  color:rgba(255,255,255,0.8);
+  text-shadow:0 -1px 0 rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.2);
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  
+  &:hover {
+   	 box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.5),
+      inset 0 -20px 20px rgba(200,200,200,0.1),
+      1px 2px 1px rgba(0,0,0,0.2),
+      0 0 2px 8px rgba(100,100,100,0.1);
+  }
+  
+  &:active {
+   	top:1px; 
+  }
+} 
+
+
+.green { background:#00a89c ; }
+
+
 
  /*video*/
 
  .logo-vid{
 
-    width: 600px;
-    height: 200px;
+    width: 300px;
+    height: auto;
     align-items: center;
+
+  }
+
+  .titulo{
+
+    color: #00a89c;
+
 
   }
 
@@ -83,4 +145,67 @@ color: #25d366;
     background: rgb(77, 77, 77);
     opacity:0,11;
     mix-blend-mode: overlay;
+  }
+
+
+  /*footer*/
+
+  footer{
+
+    width: 100%;
+    height: auto;
+    background-color: #8cdad5;
+  }
+
+ 
+
+  .logo-foot{
+   
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .map{
+
+   display: flex;
+   width: 100%;
+   height: auto;
+
+  }
+
+  .mapouter{
+
+    margin: 30px;
+    
+  }
+
+  .pfooter {
+
+    
+    color: black;
+  }
+
+  .ig{
+
+    width: 30px;
+    height: auto;
+    align-items: center;
+  }
+
+  iframe{
+
+    width: 600px;
+    height: 500px;
+  }
+
+  /* media query */
+
+  @media only screen and (max-width: 770px) {
+    iframe{
+
+      visibility: hidden;
+
+
+    }
   }

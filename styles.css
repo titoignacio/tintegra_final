@@ -191,8 +191,34 @@ body{
     font-family: 'Anton', sans-serif;
     text-align: center;
     text-justify: inter-word;
-    color: black;
+    color: #00a89c;
     }
+
+    /* servicios */
+
+    .servicios{
+
+      background-image: url('./img/foto07.jpg');
+      background-size: cover;
+      background-position: 40%;
+      height: 40vh;
+     
+      }
+
+
+      /* contacto */
+
+
+      .contacto{
+
+        background-image: url('./img/foto06.jpg');
+        background-size: cover;
+        background-position: 40%;
+        height: 40vh;
+       
+        }
+
+
 
 
   /*footer*/
@@ -269,6 +295,30 @@ body{
 
       font-size:0.7em;
     }
+  }
+
+  @media only screen and (max-width: 303px) {
+
+    .subtitle {
+
+      font-family: 'Anton', sans-serif;
+      font-size: 30px;
+      text-align: center;
+      text-justify: inter-word;
+      color: #00a89c;
+  
+  
+    }
+
+    .titulon{
+
+      font-family: 'Anton', sans-serif;
+      font-size: 30px;
+      text-align: center;
+      text-justify: inter-word;
+      color: #00a89c;
+      }
+    
   }
 
 
